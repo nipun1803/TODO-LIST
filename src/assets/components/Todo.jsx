@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./style.css"; 
+import "./style.css";
 
 const ToDoApp = () => {
   const [todos, setTodos] = useState([]);
@@ -87,8 +87,15 @@ const ToDoApp = () => {
             <h4>{todo.title}</h4>
             <p>{todo.description}</p>
             <div className="button-group">
-              <button className="edit-button" onClick={() => editTodo(index)}>Edit</button>
-              <button className="delete-button" onClick={() => deleteTodo(index)}>Delete</button>
+              <button className="edit-button" onClick={() => editTodo(index)}>
+                Edit
+              </button>
+              <button
+                className="delete-button"
+                onClick={() => deleteTodo(index)}
+              >
+                Delete
+              </button>
             </div>
           </li>
         ))}
